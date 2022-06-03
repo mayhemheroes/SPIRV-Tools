@@ -1,0 +1,4 @@
+project: PROJECT
+target: spvtools_as_fuzzer
+cmds:
+- cmd: /out/spvtools_as_fuzzer
