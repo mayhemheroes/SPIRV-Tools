@@ -15,7 +15,7 @@
 #
 ################################################################################
 
-git clone https://github.com/KhronosGroup/SPIRV-Headers external/spirv-headers --depth=1
+git clone https://github.com/KhronosGroup/SPIRV-Headers external/spirv-headers && git -C external/spirv-headers checkout 34d04647d384e0aed037e7a2662a655fc39841bb
 git clone https://github.com/protocolbuffers/protobuf   external/protobuf      --branch v3.13.0.1
 git clone https://dawn.googlesource.com/dawn --depth=1
 
