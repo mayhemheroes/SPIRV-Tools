@@ -15,6 +15,7 @@
 ################################################################################
 
 FROM gcr.io/oss-fuzz-base/base-builder
+RUN sed -i s|snapshot.ubuntu.com|archive.ubuntu.com|g /etc/apt/sources.list /etc/apt/sources.list.d/*.list 2>/dev/null || true
 RUN apt-get update && apt-get install -y make autoconf automake libtool ninja-build
 COPY . spirv-tools
 RUN rm -rf spirv-tools/mayhem
