@@ -1,0 +1,5 @@
+project: SPIRV-Tools
+target: spvtools_val_fuzzer
+cmds:
+  - cmd: /mayhem/spvtools_val_fuzzer
+    libfuzzer: true

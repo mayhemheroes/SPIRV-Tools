@@ -1,0 +1,5 @@
+project: SPIRV-Tools
+target: spvtools_binary_parser_fuzzer
+cmds:
+  - cmd: /mayhem/spvtools_binary_parser_fuzzer
+    libfuzzer: true
